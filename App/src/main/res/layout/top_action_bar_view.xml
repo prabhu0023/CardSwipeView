@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/action_row"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#009688"
+        android:clickable="true" >
+
+        <View
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/standard_half_margin"
+            android:layout_marginRight="@dimen/standard_half_margin"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/banner_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tinder Proto"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/notif_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="47dp"
+            android:background="@drawable/circle_button_shape"
+            android:gravity="center"
+            android:minHeight="23dp"
+            android:minWidth="23dp"
+            android:padding="3dp"
+            android:text="3"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>
